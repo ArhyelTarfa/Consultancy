@@ -106,11 +106,11 @@ const Footer = () => {
       {/* Map Section */}
       <div className="mt-8">
         <h2 className="text-xl font-bold text-center text-white mb-4">Our Location</h2>
-        <div className="w-full h-64">
+        <div className="flex justify-center">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86510.37222164494!2d-2.111340094645534!3d7.320953901580836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1735502502958!5m2!1sen!2sng"
-            width="100%"
-            height="100%"
+            width="50%"
+            height="300"
             style={{ border: 0 }}
             allowFullScreen=""
             loading="lazy"
