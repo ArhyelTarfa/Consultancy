@@ -1,4 +1,3 @@
-// src/components/Footer.js
 import React from 'react';
 
 const Footer = () => {
@@ -101,6 +100,22 @@ const Footer = () => {
           </ul>
           <p className="text-gray-400 mt-4">Email: info@consultingfirm.com</p>
           <p className="text-gray-400">Phone: +123-456-7890</p>
+        </div>
+      </div>
+
+      {/* Map Section */}
+      <div className="mt-8">
+        <h2 className="text-xl font-bold text-center text-white mb-4">Our Location</h2>
+        <div className="w-full h-64">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86510.37222164494!2d-2.111340094645534!3d7.320953901580836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1735502502958!5m2!1sen!2sng"
+            width="100%"
+            height="100%"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            title="Firm Location"
+          />
         </div>
       </div>
 
