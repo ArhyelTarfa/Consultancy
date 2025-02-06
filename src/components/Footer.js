@@ -98,8 +98,10 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <p className="text-gray-400 mt-4">Email: info@consultingfirm.com</p>
-          <p className="text-gray-400">Phone: +123-456-7890</p>
+          <p className="text-gray-400 mt-4">Email: easbyroadltd@gmail.com</p>
+          <p className="text-gray-400">Phone: +234 816 874 0399</p>
+          <p className="text-gray-400">Phone: +234 706 123 9200</p>
+          <p className="text-gray-400">Phone: +233 555 344 032</p>
         </div>
       </div>
 

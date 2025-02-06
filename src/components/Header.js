@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../imgs/Logo.jpg';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,16 +23,22 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-gray-800 text-white sticky top-0 z-50">
+    <header className="bg-white text-black sticky top-0 z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center p-4">
-        {/* Logo */}
-        <div className="text-lg font-bold">
-          <a href="#home">MyCompany</a>
+        
+        {/* Logo & Slogan */}
+        <div className="flex items-center space-x-2 md:space-x-4">
+          <a href="#home" className="flex flex-col md:flex-row items-center">
+            <img src={logo} alt="logo" className="h-12 w-auto" />
+            <span className="text-gray-900 text-sm md:text-sm md:mt-5 font-bold italic md:ml-5">
+              Taking You There
+            </span>
+          </a>
         </div>
 
         {/* Hamburger Menu (Visible on smaller screens) */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="md:hidden text-black focus:outline-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
@@ -54,26 +61,26 @@ const Header = () => {
         <nav
           className={`${
             isOpen ? 'block' : 'hidden'
-          } absolute md:static top-14 left-0 w-full md:w-auto bg-gray-800 md:bg-transparent md:flex items-center`}
+          } absolute md:static top-14 left-0 w-full md:w-auto bg-white md:bg-transparent md:flex items-center`}
         >
           <ul className="flex flex-col md:flex-row items-center md:space-x-6 space-y-4 md:space-y-0 p-4 md:p-0">
             <li>
-              <a href="#home" className="hover:text-gray-400" onClick={handleLinkClick}>
+              <a href="#home" className="hover:text-gray-500" onClick={handleLinkClick}>
                 Home
               </a>
             </li>
             <li>
-              <a href="#about" className="hover:text-gray-400" onClick={handleLinkClick}>
+              <a href="#about" className="hover:text-gray-500" onClick={handleLinkClick}>
                 About
               </a>
             </li>
             <li>
-              <a href="#services" className="hover:text-gray-400" onClick={handleLinkClick}>
+              <a href="#services" className="hover:text-gray-500" onClick={handleLinkClick}>
                 Services
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-gray-400" onClick={handleLinkClick}>
+              <a href="#contact" className="hover:text-gray-500" onClick={handleLinkClick}>
                 Contact
               </a>
             </li>
