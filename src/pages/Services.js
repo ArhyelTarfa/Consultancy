@@ -30,7 +30,8 @@ const Services = () => {
       <div className="container mx-auto text-center">
         <h1 className="text-4xl font-bold text-gray-800">Our Services</h1>
         <p className="text-gray-600 mt-4 mb-10">
-          We specialize in consultancy and value-added solutions across key industries.
+          Our consultancy services are designed to empower organizations to excel in a dynamic and evolving landscape. We specialize in strategic planning to drive sustainable growth, management consulting to optimize operations and enhance governance, and IT and knowledge management to deliver cutting-edge digital solutions.
+          Additionally, we provide trade and industry advisory, offering market entry strategies and sectoral analysis to help businesses navigate and succeed in competitive markets.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6">
           {services.map((service, index) => (
