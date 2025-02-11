@@ -1,24 +1,24 @@
 import React from 'react';
-import AdvisoryImg from '../imgs/Advisory.jpeg';
-import OilAndGasImg from '../imgs/Oil.jpeg';
-import FinancingImg from '../imgs/Financing.jpeg';
+import Technology from '../imgs/Technology.jpeg';
+import Agriculture from '../imgs/Agricuulture.jpg';
+import Housing from '../imgs/Housing.jpg';
 
 const services = [
   {
     title: 'TECHNOLOGY AND INNOVATION',
-    image: AdvisoryImg,
+    image: Technology,
     description:
       'We help businesses leverage cutting-edge technology to enhance efficiency and sustainability. Our expertise includes IT project consultancy, as well as software and hardware development, ensuring organizations remain competitive in an evolving digital landscape.'
   },
   {
     title: 'AGRICULTURE AND AGRO-ALLIED SERVICES',
-    image: FinancingImg,
+    image: Agriculture,
     description:
       'We support food security initiatives and empower local farmers by connecting them to global markets. Our services encompass agri-value chain development and advisory on sustainable agriculture practices, driving innovation in the sector.'
   },
   {
     title: 'REAL ESTATE AND SUSTAINABLE HOUSING',
-    image: OilAndGasImg,
+    image: Housing,
     description:
       'We advance sustainable housing solutions through strategic consultancy, facilitating partnerships between investors, developers, and communities. Our expertise spans resource mobilization, project execution, and impact measurement, ensuring environmentally sustainable and affordable housing developments.'
   },
