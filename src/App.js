@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
+import Companies from './pages/Companies'
 import Contact from './pages/Contact';
 
 const App = () => {
@@ -27,6 +28,9 @@ const App = () => {
               <section id="services">
                 <Services />
               </section>
+              <section id="cpmpanies">
+                <Companies />
+              </section>
               <section id="contact">
                 <Contact />
               </section>
@@ -37,6 +41,7 @@ const App = () => {
         {/* Dedicated pages */}
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/companies" element={<Companies />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>

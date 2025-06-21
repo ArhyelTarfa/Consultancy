@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '../imgs/Logo.jpg';
+import logo from '../imgs/Op-Co Logos/Easby Road Logo.png';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -77,6 +77,11 @@ const Header = () => {
             <li>
               <a href="#services" className="hover:text-gray-500" onClick={handleLinkClick}>
                 Services
+              </a>
+            </li>
+            <li>
+              <a href="#companies" className="hover:text-gray-500" onClick={handleLinkClick}>
+                Our Companies
               </a>
             </li>
             <li>

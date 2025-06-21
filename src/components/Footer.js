@@ -100,26 +100,10 @@ const Footer = () => {
           </ul>
           <p className="text-gray-400 mt-4">Email: easbyroadltd@gmail.com</p>
           <p className="text-gray-400">Phone: +234 816 874 0399</p>
-          <p className="text-gray-400">Phone: +234 706 123 9200</p>
           <p className="text-gray-400">Phone: +233 555 344 032</p>
         </div>
       </div>
 
-      {/* Map Section */}
-      <div className="mt-8">
-        <h2 className="text-xl font-bold text-center text-white mb-4">Our Location</h2>
-        <div className="flex justify-center">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d86510.37222164494!2d-2.111340094645534!3d7.320953901580836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1735502502958!5m2!1sen!2sng"
-            width="50%"
-            height="300"
-            style={{ border: 0 }}
-            allowFullScreen=""
-            loading="lazy"
-            title="Firm Location"
-          />
-        </div>
-      </div>
 
       {/* Copyright */}
       <div className="text-center text-gray-500 mt-10">
