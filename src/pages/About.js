@@ -1,5 +1,5 @@
 import React from 'react';
-import firmImage from '../imgs/firm.jpeg';
+import firmImage from '../imgs/firm.jpg';
 import aboutBack from '../imgs/Aboutback.jpg';
 
 const About = () => {
@@ -31,7 +31,7 @@ const About = () => {
             <img
               src={firmImage}
               alt="About Us"
-              className="w-full max-w-sm md:max-w-md rounded-lg shadow-lg"
+              className="w-sm max-w-sm md:max-w-md rounded-lg shadow-lg"
             />
           </div>
         </div>

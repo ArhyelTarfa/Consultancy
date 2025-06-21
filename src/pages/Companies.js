@@ -1,36 +1,40 @@
 // src/components/OurCompanies.js
 import React from 'react';
+import cask from '../imgs/Op-Co Logos/Cask and Crate Logo.png'
+import Maharusi from '../imgs/Op-Co Logos/Maharusi Logo.png'
+import Easby from '../imgs/Op-Co Logos/Easby Road Logo.png'
+import coming from '../imgs/Op-Co Logos/Coming Soon.jpg'
 
 const companies = [
   {
     name: 'Cask and Crate',
     description: 'Providing innovative IT and software solutions.',
-    logo: '../imgs/Aboutback.jpeg' // Example path
+    logo: cask // Example path
   },
   {
     name: 'Maharusi',
     description: 'Driving sustainable agriculture and agri-business.',
-    logo: '/imgs/easbyagri.png'
+    logo: Maharusi
   },
   {
     name: 'Perservia',
     description: 'Delivering affordable and sustainable housing.',
-    logo: '/imgs/easbyrealty.png'
+    logo: coming
   },
   {
     name: 'NurVolt',
     description: 'Delivering affordable and sustainable housing.',
-    logo: '/imgs/easbyrealty.png'
+    logo: coming
   },
   {
     name: 'AmaKuro Capital',
     description: 'Delivering affordable and sustainable housing.',
-    logo: '/imgs/easbyrealty.png'
+    logo: coming
   },
   {
     name: 'Easby Road',
     description: 'Delivering affordable and sustainable housing.',
-    logo: '/imgs/easbyrealty.png'
+    logo: Easby
   },
 ];
 
