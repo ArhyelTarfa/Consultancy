@@ -1,9 +1,11 @@
 // src/components/OurCompanies.js
 import React from 'react';
-import cask from '../imgs/Op-Co Logos/Cask and Crate Logo.png'
-import Maharusi from '../imgs/Op-Co Logos/Maharusi Logo.png'
-import Easby from '../imgs/Op-Co Logos/Easby Road Logo.png'
-import coming from '../imgs/Op-Co Logos/Coming Soon.jpg'
+import cask from '../imgs/Op-Co Logos/Cask and Crate.png'
+import Maharusi from '../imgs/Op-Co Logos/Maharusi.png'
+import Easby from '../imgs/Op-Co Logos/Easby Road.png'
+import Perservia from '../imgs/Op-Co Logos/Preservia.png'
+import AmaKuro from '../imgs/Op-Co Logos/AmaKuro Capital.png'
+import NurVolt from '../imgs/Op-Co Logos/Coming Soon.jpg'
 
 const companies = [
   {
@@ -19,17 +21,17 @@ const companies = [
   {
     name: 'Perservia',
     description: 'Delivering affordable and sustainable housing.',
-    logo: coming
+    logo: Perservia
   },
   {
     name: 'NurVolt',
     description: 'Delivering affordable and sustainable housing.',
-    logo: coming
+    logo: NurVolt
   },
   {
     name: 'AmaKuro Capital',
     description: 'Delivering affordable and sustainable housing.',
-    logo: coming
+    logo: AmaKuro
   },
   {
     name: 'Easby Road',

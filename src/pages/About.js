@@ -27,11 +27,11 @@ const About = () => {
               to achieve their goals.
             </p>
           </div>
-          <div className="md:w-1/2 px-6 mt-10 md:mt-0 flex justify-center">
+          <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">
             <img
               src={firmImage}
               alt="About Us"
-              className="w-sm max-w-sm md:max-w-md rounded-lg shadow-lg"
+              className="w-full max-w-sm md:max-w-md rounded-lg shadow-lg"
             />
           </div>
         </div>
