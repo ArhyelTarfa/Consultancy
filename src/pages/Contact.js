@@ -10,10 +10,10 @@ const Contact = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-        "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
+        "service_97pv9ae",
+        "template_zhd0fbx",
         formRef.current,
-        "YOUR_PUBLIC_KEY" // Replace with your EmailJS public key
+        "X1Wlehj0TQqvjw680"
       )
       .then(
         (result) => {
@@ -53,7 +53,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="name"
-                className="block text-gray-800 font-medium mb-2"
+                className="block text-gray-800 font-medium required mb-2"
               >
                 Name
               </label>
@@ -61,7 +61,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="user_name"
-                className="w-full p-3 border border-gray-300 rounded-lg text-base"
+                className="w-full p-3 border border-gray-300 required rounded-lg text-base"
                 placeholder="Your name"
                 required
               />
@@ -69,7 +69,7 @@ const Contact = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-gray-800 font-medium mb-2"
+                className="block text-gray-800 required font-medium mb-2"
               >
                 Email
               </label>
@@ -92,7 +92,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
-                className="w-full p-3 border border-gray-300 rounded-lg text-base"
+                className="w-full p-3 border required border-gray-300 rounded-lg text-base"
                 placeholder="Your message"
                 rows="4"
                 required

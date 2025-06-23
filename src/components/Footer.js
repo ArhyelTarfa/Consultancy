@@ -98,7 +98,7 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <p className="text-gray-400 mt-4">Email: easbyroadltd@gmail.com</p>
+          <p className="text-gray-400 mt-4">Email: info@easbyroad.com</p>
           <p className="text-gray-400">Phone: +234 816 874 0399</p>
           <p className="text-gray-400">Phone: +233 555 344 032</p>
         </div>
