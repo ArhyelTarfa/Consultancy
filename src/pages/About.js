@@ -13,18 +13,8 @@ const About = () => {
               About Easby Road Ltd
             </h1>
             <p className="text-gray-600 mt-4 leading-relaxed">
-              Founded in 2021, Easby Road Ltd is a consultancy firm
-              dedicated to delivering high-impact solutions for
-              businesses, governments, and non-governmental
-              organizations. With a focus on excellence and innovation,
-              we specialize in addressing the unique challenges of our
-              clients by offering tailored advisory services across key
-              sectors such as technology, logistics, and agriculture.
-              Our team of experts combines industry knowledge with a
-              commitment to sustainability, ensuring that every project
-              we undertake contributes to economic growth and long-term resilience. At Easby Road Ltd, we don’t just provide
-              solutions; we build partnerships that empower our clients
-              to achieve their goals.
+                Easby Road is a strategic investment and advisory company focused on building and backing ventures that deliver sustainable impact across diverse sectors.
+                Our roots in consulting continue to shape our hands-on approach to growth, innovation, and value creation.
             </p>
           </div>
           <div className="md:w-1/2 mt-10 md:mt-0 flex justify-center">

@@ -16,6 +16,12 @@ const Home = () => {
       aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
+  const handleScrollToCompanies = () => {
+    const aboutSection = document.getElementById('companies');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   return (
     <div 
@@ -36,16 +42,26 @@ const Home = () => {
         animate={{ opacity: isVisible ? 1 : 0 }}
         transition={{ duration: 1 }}
       >
-        <h1 className="text-4xl font-bold">Welcome to EASBY ROAD</h1>
+        <h1 className="text-4xl font-bold">Bridging Gaps. Building Futures.</h1>
         <p className="mt-4 text-lg">
-          We provide expert solutions tailored to your needs.
+          Founded in 2021 as a consulting firm, Easby Road has grown into a dynamic holding company investing in and supporting businesses across Africa.
         </p>
-        <button 
-          onClick={handleScrollToAbout}  // 🔹 Add smooth scrolling function
-          className="mt-8 px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-        >
-          Learn More
-        </button>
+        <div className='flex justify-around '>
+          <button 
+            onClick={handleScrollToCompanies}  // 🔹 Add smooth scrolling function
+            className="mt-8 px-6 py-2 bg-gray-600 text-white rounded hover:bg-orange-700"
+          >
+            Explore Our Companies
+          </button>
+
+          <button 
+            onClick={handleScrollToAbout}  // 🔹 Add smooth scrolling function
+            className="mt-8 px-6 py-2 bg-gray-600 text-white rounded hover:bg-orange-700"
+          >
+            Meet the team 
+          </button>
+        </div>
+
       </motion.div>
     </div>
   );

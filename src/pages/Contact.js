@@ -100,10 +100,11 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="w-full bg-blue-600 text-white py-3 rounded-lg text-base hover:bg-blue-700"
+              className="w-full bg-orange-600 text-white py-3 rounded-lg text-base transition-colors duration-300 ease-in-out hover:bg-black"
             >
-              Send Message.
+              Send Message
             </button>
+
             {successMessage && (
               <p className="text-center text-green-600 mt-4">{successMessage}</p>
             )}

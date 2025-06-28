@@ -1,45 +1,69 @@
+// src/pages/Services.js
 import React from 'react';
-import Technology from '../imgs/Technology.jpeg';
-import Agriculture from '../imgs/Agricuulture.jpg';
-import Housing from '../imgs/Housing.jpg';
+import { motion } from 'framer-motion';
 
 const services = [
   {
-    title: 'TECHNOLOGY AND INNOVATION',
-    image: Technology,
+    title: 'Business Development & Growth Strategy',
     description:
-      'We help businesses leverage cutting-edge technology to enhance efficiency and sustainability. Our expertise includes IT project consultancy, as well as software and hardware development, ensuring organizations remain competitive in an evolving digital landscape.'
+      'We help organizations identify opportunities, expand into new markets, and implement scalable strategies to accelerate growth and resilience.'
   },
   {
-    title: 'AGRICULTURE AND AGRO-ALLIED SERVICES',
-    image: Agriculture,
+    title: 'Investor Readiness & Capital Scouting',
     description:
-      'We support food security initiatives and empower local farmers by connecting them to global markets. Our services encompass agri-value chain development and advisory on sustainable agriculture practices, driving innovation in the sector.'
+      'We prepare businesses for investment by enhancing pitch materials, refining financials, and connecting them with aligned funding sources.'
   },
   {
-    title: 'REAL ESTATE AND SUSTAINABLE HOUSING',
-    image: Housing,
+    title: 'Sustainable Real Estate Advisory',
     description:
-      'We advance sustainable housing solutions through strategic consultancy, facilitating partnerships between investors, developers, and communities. Our expertise spans resource mobilization, project execution, and impact measurement, ensuring environmentally sustainable and affordable housing developments.'
+      'We provide tailored advice on environmentally conscious development, investment structuring, and market positioning for real estate ventures.'
+  },
+  {
+    title: 'Tech & Agritech for SMEs/MSMEs',
+    description:
+      'We enable small businesses to integrate innovative technologies and agritech solutions that drive efficiency and unlock growth.'
+  },
+  {
+    title: 'Brand Building & Market Entry Planning',
+    description:
+      'We craft compelling brand identities and entry strategies that position businesses to succeed in new and competitive markets.'
   },
 ];
 
 const Services = () => {
   return (
     <div id="services" className="bg-gray-100 py-20">
-      <div className="container mx-auto text-center">
-        <h1 className="text-4xl font-bold text-gray-800">Our Services</h1>
-        <p className="text-gray-600 mt-4 mb-10">
-          Our consultancy services are designed to empower organizations to excel in a dynamic and evolving landscape. We specialize in strategic planning to drive sustainable growth, management consulting to optimize operations and enhance governance, and IT and knowledge management to deliver cutting-edge digital solutions.
-          Additionally, we provide trade and industry advisory, offering market entry strategies and sectoral analysis to help businesses navigate and succeed in competitive markets.
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6">
+      <div className="container mx-auto text-center px-6">
+        <motion.h1
+          className="text-4xl font-bold text-gray-800"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Our Services
+        </motion.h1>
+        <motion.p
+          className="text-gray-600 mt-4 mb-10 max-w-3xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+        >
+          Our core services are built to support bold, forward-looking businesses and institutions.
+          We deliver hands-on strategy, advisory, and execution support across growth, capital, tech, and market expansion.
+        </motion.p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <div key={index} className="bg-white p-6 shadow-lg rounded-lg text-left space-y-4 hover:shadow-xl transition-shadow">
-              <img src={service.image} alt={service.title} className="w-full h-40 object-cover rounded-md" />
-              <h2 className="text-xl font-semibold text-gray-800">{service.title}</h2>
+            <motion.div
+              key={index}
+              className="bg-white p-6 shadow-lg rounded-xl hover:shadow-xl transition duration-300 text-left"
+              whileHover={{ scale: 1.03 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+            >
+              <h2 className="text-xl font-semibold text-gray-800 mb-2">{service.title}</h2>
               <p className="text-gray-600">{service.description}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
