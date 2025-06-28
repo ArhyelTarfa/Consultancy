@@ -9,6 +9,7 @@ import About from './pages/About';
 import Companies from './pages/TempCompanies';
 import Contact from './pages/Contact';
 import Leadership from './pages/Leadership';
+import ScrollToTop from './components/ScrollToTop';
 
 // Company subpages
 import CaskPage from './pages/companies/Cask';
@@ -21,6 +22,7 @@ import EasbyPage from './pages/companies/Easby';
 const App = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         {/* Main one-page layout */}
