@@ -7,7 +7,7 @@ import Maharusi from '../imgs/Op-Co Logos/Maharusi.png';
 import Easby from '../imgs/Op-Co Logos/Easby Road.png';
 import Perservia from '../imgs/Op-Co Logos/Preservia.png';
 import AmaKuro from '../imgs/Op-Co Logos/AmaKuro Capital.png';
-import NurVolt from '../imgs/Op-Co Logos/Coming Soon.jpg';
+import NurVolt from '../imgs/Op-Co Logos/NurVolt Tech.png';
 
 const companies = [
   {
@@ -25,7 +25,7 @@ const companies = [
     path: '/companies/maharusi'
   },
   {
-    name: 'Perservia',
+    name: 'Preservia',
     description: 'Preserving freshness. Preventing waste.',
     info: 'A food-tech startup tackling post-harvest loss with innovative dehydration and preservation techniques.',
     logo: Perservia,
