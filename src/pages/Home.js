@@ -9,7 +9,7 @@ const Home = () => {
     threshold: 0.5, // Trigger animation when 50% of the element is visible
   });
 
-    // Function to handle smooth scroll to the About section
+  // Function to handle smooth scroll to the About section
   const handleScrollToAbout = () => {
     const aboutSection = document.getElementById('about');
     if (aboutSection) {
@@ -24,9 +24,9 @@ const Home = () => {
   };
 
   return (
-    <div 
-      id="home" 
-      ref={elementRef} 
+    <div
+      id="home"
+      ref={elementRef}
       className="flex flex-col items-center justify-center text-white text-center py-20 px-4 md:px-12"
       style={{
         backgroundImage: `url(${easyimg})`,
@@ -46,21 +46,22 @@ const Home = () => {
         <p className="mt-4 text-lg">
           Founded in 2021 as a consulting firm, Easby Road has grown into a dynamic holding company investing in and supporting businesses across Africa.
         </p>
-        <div className='flex justify-between'>
-          <button 
-            onClick={handleScrollToCompanies}  // 🔹 Add smooth scrolling function
-            className="mt-8 px-6 py-2 bg-gray-600 text-white rounded hover:bg-orange-700"
+        <div className="flex flex-wrap justify-around gap-x-4 gap-y-4">
+          <button
+            onClick={handleScrollToCompanies}
+            className="px-6 py-2 bg-gray-600 text-white rounded hover:bg-orange-700"
           >
             Explore Our Companies
           </button>
 
-          <button 
-            onClick={handleScrollToAbout}  // 🔹 Add smooth scrolling function
-            className="mt-8 px-6 py-2 bg-gray-600 text-white rounded hover:bg-orange-700"
+          <button
+            onClick={handleScrollToAbout}
+            className="px-6 py-2 bg-gray-600 text-white rounded hover:bg-orange-700"
           >
-            Meet the team 
+            Meet the Team
           </button>
         </div>
+
 
       </motion.div>
     </div>
