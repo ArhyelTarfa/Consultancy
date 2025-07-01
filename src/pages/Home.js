@@ -46,7 +46,7 @@ const Home = () => {
         <p className="mt-4 text-lg">
           Founded in 2021 as a consulting firm, Easby Road has grown into a dynamic holding company investing in and supporting businesses across Africa.
         </p>
-        <div className='flex justify-around '>
+        <div className='flex justify-between'>
           <button 
             onClick={handleScrollToCompanies}  // 🔹 Add smooth scrolling function
             className="mt-8 px-6 py-2 bg-gray-600 text-white rounded hover:bg-orange-700"
