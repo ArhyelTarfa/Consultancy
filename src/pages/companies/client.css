@@ -1,0 +1,27 @@
+/* Swiper navigation arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #f97316; /* Tailwind orange-600 */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  color: #000; /* Black on hover */
+  transform: scale(1.2);
+}
+
+/* Swiper pagination bullets */
+.swiper-pagination-bullet {
+  background: #d1d5db; /* Gray-300 */
+  opacity: 1;
+  transition: background 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: #f97316; /* Orange active */
+}
+
+.swiper-pagination-bullet:hover {
+  background: #000; /* Black on hover */
+}

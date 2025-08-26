@@ -68,15 +68,15 @@ const Header = () => {
         >
           <ul className="flex flex-col md:flex-row items-center md:space-x-6 space-y-4 md:space-y-0 p-4 md:p-0">
               <li>
+                <a href="/#home" className="hover:text-gray-500" onClick={handleLinkClick}>
+                  Home
+                </a>
+              </li>
+              <li>
                 <a href="/#about" className="hover:text-gray-500" onClick={handleLinkClick}>
                   About
                 </a>
               </li>
-              {/* <li>
-                <a href="/#services" className="hover:text-gray-500" onClick={handleLinkClick}>
-                  Services
-                </a>
-              </li> */}
               <li>
                 <a href="/#companies" className="hover:text-gray-500" onClick={handleLinkClick}>
                   Our Companies
